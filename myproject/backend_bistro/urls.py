@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     path('menu/', views.get_menus),
-    # path('menu/<str:title>/', views.get_menu),
+    path('menu/test/', views.test),
 ]
 
 # this is the URLconf
