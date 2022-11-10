@@ -3,9 +3,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('<int:menu_item_id>/', views.detail, name='detail'),
-    path('<int:menu_item_id>/results/', views.results, name='results'),
+    path('menu/', views.get_menus),
+    # path('menu/<str:title>/', views.get_menu),
 ]
 
 # this is the URLconf
