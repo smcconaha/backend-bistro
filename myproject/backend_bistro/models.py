@@ -9,7 +9,7 @@ class Menu_item(models.Model):
     cuisine = models.ForeignKey('Cuisine', on_delete=models.CASCADE, null=True, default=None)
     def __str__(self):
         return self.title
-    def json(self):   
+    def menu_convert(self):   
         return {
                 "title": self.title,
                 "description": self.description,
